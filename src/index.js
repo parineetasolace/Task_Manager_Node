@@ -11,10 +11,17 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 
+const router = new express.Router();
+
+router.get("/", (req, res) => {
+  res.send("Welcome to task manager!");
+});
+
 connectDB();
 
 app.use(express.json());
 
+app.use("/", router);
 app.use("/users", userRouter);
 app.use("/tasks", taskRouter);
 
