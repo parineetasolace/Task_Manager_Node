@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
 import Task from "./task.js";
 
-dotenv.config();
+// dotenv.config();
 
 const jwt_key = process.env.JWT_SECRET;
 
