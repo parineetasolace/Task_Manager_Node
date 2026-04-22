@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Tasks</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Tasks</h2>
+    <button onclick="logout()">Logout</button>
+
+    <div class="box">
+      <input id="taskTitle" placeholder="Task Title" />
+      <input id="taskDesc" placeholder="Description" />
+      <button onclick="createTask()">Add Task</button>
+    </div>
+
+    <h3>Your Tasks</h3>
+    <div id="taskList"></div>
+  </body>
+</html>

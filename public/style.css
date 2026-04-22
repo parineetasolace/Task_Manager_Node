@@ -1,0 +1,85 @@
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* --- Container Box --- */
+.box, form {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* --- Inputs --- */
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #0078ff;
+  outline: none;
+}
+
+/* --- Buttons --- */
+button {
+  padding: 10px;
+  background: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+/* Links */
+a {
+  color: #0078ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Task List Styling */
+#taskList {
+  width: 320px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.taskItem {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}

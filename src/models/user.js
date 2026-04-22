@@ -2,13 +2,8 @@ import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-// import dotenv from "dotenv";
 
 import Task from "./task.js";
-
-// dotenv.config();
-
-const jwt_key = process.env.JWT_SECRET;
 
 const userSchema = new mongoose.Schema(
   {
@@ -89,6 +84,8 @@ userSchema.methods.toJSON = function () {
 
 userSchema.methods.generateAuthToken = async function () {
   const user = this;
+
+  const jwt_key = process.env.JWT_SECRET;
 
   const token = jwt.sign({ _id: user._id }, jwt_key);
 

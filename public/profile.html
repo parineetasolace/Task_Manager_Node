@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Profile</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Profile</h2>
+
+    <button onclick="logout()">Logout</button>
+
+    <div id="profileBox" class="box"></div>
+
+    <h3>Upload Avatar</h3>
+    <input type="file" id="avatarInput" />
+    <button onclick="uploadAvatar()">Upload</button>
+
+    <h3>Your Avatar</h3>
+    <img id="avatarImg" width="150" />
+  </body>
+</html>

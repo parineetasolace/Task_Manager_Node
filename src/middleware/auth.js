@@ -5,12 +5,12 @@ import User from "../models/user.js";
 
 // dotenv.config();
 
-const jwt_key = process.env.JWT_SECRET;
-
 const auth = async (req, res, next) => {
   try {
     const token = req.header("Authorization").replace("Bearer ", "");
     console.log("Token: ", token);
+
+    const jwt_key = process.env.JWT_SECRET;
 
     const decoder = jwt.verify(token, jwt_key);
     const user = await User.findById({
